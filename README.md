@@ -39,14 +39,35 @@ src/        backend futuro e regras de negocio
 docs/       processos, entidades e modelo de dados
 ```
 
-## Resultados e Aprendizados Esperados
+## Como Executar
+
+```sh
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+jupyter notebook notebooks/research-portfolio-demo.ipynb
+```
+
+## Resultados e Aprendizados
 
 - Modelo de dados para gestao de projetos de pesquisa
 - Controle de prazos, documentos e indicadores
 - Base para relatorios automaticos
 - Aprendizado sobre governanca aplicada a PD&I
 
+## Resultado Demonstrativo
+
+Com os dados sinteticos em `data/editais_projetos_exemplo.csv`, o notebook calcula um score de priorizacao para projetos de pesquisa e inovacao.
+
+| Projeto | Area | Score |
+| --- | --- | ---: |
+| Automacao Documental | IA | 43,10 |
+| Indicadores Urbanos | Politicas Publicas | 42,40 |
+| Plataforma DPP | Transformacao Digital | 41,80 |
+| Sensor Eficiencia Energetica | Industria 4.0 | 39,20 |
+
 ## Autor
 
 Rodrigo Willemann  
 Email: rodrigo.willemann@gmail.com
+
